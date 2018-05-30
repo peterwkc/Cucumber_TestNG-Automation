@@ -1,0 +1,206 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13308044,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Logout.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 29278803,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Valid Login",
+        "description": "",
+        "id": "login-to-volare-collector;valid-login",
+        "after": [
+          {
+            "result": {
+              "duration": 860247759,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2817376863,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Volare Collector Home Page opens in browser",
+            "match": {
+              "location": "Login.loadPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4733848204,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I login to Volare Collector with Username and Password",
+            "match": {
+              "location": "Login.login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 149334,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Page navigate to Volare Collector Home Page",
+            "match": {
+              "location": "Login.navigatePage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login_Valid"
+          }
+        ]
+      }
+    ],
+    "name": "Login to Volare Collector",
+    "description": "Description:  As a user, I want login to Volare Collector ",
+    "id": "login-to-volare-collector",
+    "keyword": "Feature",
+    "uri": "src/Feature/Login.feature",
+    "tags": [
+      {
+        "name": "@Login_Valid",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 201877,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Logout.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 123654,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Valid Logout",
+        "description": "",
+        "id": "logout-from-volare-collector;valid-logout",
+        "after": [
+          {
+            "result": {
+              "duration": 252712197,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 63263975,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "A user has login to Volare Collector",
+            "match": {
+              "location": "Logout.assertLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 210616411,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click logout button",
+            "match": {
+              "location": "Logout.logout()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1680920620,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Logout from Volare Collector and redirect to login page",
+            "match": {
+              "location": "Logout.afterLogout()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Logout_Valid"
+          }
+        ]
+      }
+    ],
+    "name": "Logout from Volare Collector",
+    "description": "Description:  As a user, I want login to Volare Collector ",
+    "id": "logout-from-volare-collector",
+    "keyword": "Feature",
+    "uri": "src/Feature/Logout.feature",
+    "tags": [
+      {
+        "name": "@Logout_Valid",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
